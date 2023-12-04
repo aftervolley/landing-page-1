@@ -1,0 +1,38 @@
+:root {
+  /* From https://developer.mozilla.org/en-US/docs/Web/CSS/font-family#some_common_font_families */
+  --serif-font: Times, Times New Roman, Georgia, serif;
+  --sans-font: Verdana, Arial, Helvetica, sans-serif;
+  --mono-font: Lucida Console, Courier, monospace;
+}
+
+html,
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-family: var(--sans-font);
+}
+
+main {
+  box-sizing: border-box;
+  max-width: 45em;
+  padding: 2rem 0;
+  margin: 0 auto;
+  background: white;
+}
+
+a {
+  color: #000;
+}
+a:visited {
+  color: #444;
+}
+a:hover,
+a:active {
+  color: #000;
+}
+
+@media print {
+  a {
+    text-decoration: none;
+  }
+}
